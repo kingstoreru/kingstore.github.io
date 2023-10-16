@@ -20,13 +20,14 @@
         transition: 1s;
       }
       .img-scale3:hover {           /*  Это увеличение картинки при наведении курсора  */
-        transform: scale(1.0);
+        transform: scale(1.0);      /*  не стал юзать тк на мобильных устройствах фигня неудобно всё дергается*/
         width: 799px;
         height: 532px;
       }
 
-      .popup {width: 150px; cursor:pointer;}     /*  Увеличить фото благодаря фокусу :focus */
-      .popup:focus {width: auto;}              /* взял отсудова: http://shpargalkablog.ru/2011/05/kak-uvelichit-izobrazhenie.html#close */
+      .popup {width: 150px; cursor:pointer;}     /*  Увеличить фото благодаря фокусу :focus  */
+      .popup:focus {width: auto;}               /*жамкаю курсором и она увеличивается и остается а вот обратно к сожалению надо жать в стороне  */
+                                              /* взял отсудова: http://shpargalkablog.ru/2011/05/kak-uvelichit-izobrazhenie.html#close */
 
       .colon3red {
         width: 10;
@@ -57,8 +58,8 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-196</b> &nbsp; <br> Цена: <b>50 руб.</b> &nbsp; В наличии (шт): <b>1</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№196.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <!-- <a href="#" target="_blank"> -->
+            <img border="0" src="img/USSR_PCWCS_№196.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">
             <h2><b>1 </b></h2>
@@ -74,7 +75,6 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-197</b> &nbsp; <br> Цена: <b>70 руб.</b> &nbsp; В наличии (шт): <b>1</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
             <img border="0" src="img/USSR_PCWCS_№197.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">
@@ -91,7 +91,6 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-198</b> &nbsp; <br> Цена: <b>50 руб.</b> &nbsp; В наличии (шт): <b>1</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
             <img border="0" src="img/USSR_PCWCS_№198.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">
@@ -108,8 +107,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-199</b> &nbsp; <br> Цена: <b>50 руб.</b> &nbsp; В наличии (шт): <b>1</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№199.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№199.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">
             <h2><b>1 </b></h2>
@@ -125,8 +123,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-200</b> &nbsp; <br> Цена: <b>** руб.</b> &nbsp; В наличии (шт): <b>*</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№200.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№200.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3red">
             <h2><b>0 </b></h2>
@@ -142,8 +139,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-201</b> &nbsp; <br> Цена: <b>50 руб.</b> &nbsp; В наличии (шт): <b>1</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№201.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№201.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">
             <h2><b>1 </b></h2>
@@ -159,8 +155,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-202</b> &nbsp; <br> Цена: <b>** руб.</b> &nbsp; В наличии (шт): <b>*</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№202.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№202.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3red">
             <h2><b>0 </b></h2>
@@ -176,8 +171,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-203</b> &nbsp; <br> Цена: <b>50 руб.</b> &nbsp; В наличии (шт): <b>1</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№203.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№203.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">
             <h2><b>1 </b></h2>
@@ -193,8 +187,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-204</b> &nbsp; <br> Цена: <b>50 руб.</b> &nbsp; В наличии (шт): <b>1</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№204.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№204.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">
             <h2><b>1 </b></h2>
@@ -210,8 +203,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-205</b> &nbsp; <br> Цена: <b>** руб.</b> &nbsp; В наличии (шт): <b>*</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№205.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№205.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3red">
             <h2><b>0 </b></h2>
@@ -227,8 +219,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-206</b> &nbsp; <br> Цена: <b>** руб.</b> &nbsp; В наличии (шт): <b>*</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№206.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№206.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3red">
             <h2><b>0 </b></h2>
@@ -244,8 +235,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-207</b> &nbsp; <br> Цена: <b>50 руб.</b> &nbsp; В наличии (шт): <b>1</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№207.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№207.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">
             <h2><b>1 </b></h2>
@@ -261,8 +251,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-208</b> &nbsp; <br> Цена: <b>** руб.</b> &nbsp; В наличии (шт): <b>*</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№208.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№208.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3red">
             <h2><b>0 </b></h2>
@@ -278,8 +267,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-209</b> &nbsp; <br> Цена: <b>** руб.</b> &nbsp; В наличии (шт): <b>*</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№209.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№209.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3red">
             <h2><b>0 </b></h2>
@@ -295,8 +283,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-210</b> &nbsp; <br> Цена: <b>** руб.</b> &nbsp; В наличии (шт): <b>*</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№210.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№210.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3red">
             <h2><b>0 </b></h2>
@@ -312,8 +299,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-211</b> &nbsp; <br> Цена: <b>** руб.</b> &nbsp; В наличии (шт): <b>*</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№211.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№211.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3red">
             <h2><b>0 </b></h2>
@@ -329,8 +315,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-212</b> &nbsp; <br> Цена: <b>** руб.</b> &nbsp; В наличии (шт): <b>*</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№212.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№212.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3red">
             <h2><b>0 </b></h2>
@@ -346,8 +331,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-213</b> &nbsp; <br> Цена: <b>** руб.</b> &nbsp; В наличии (шт): <b>*</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№213.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№213.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3red">
             <h2><b>0 </b></h2>
@@ -363,8 +347,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-214</b> &nbsp; <br> Цена: <b>** руб.</b> &nbsp; В наличии (шт): <b>*</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№214.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№214.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3red">
             <h2><b>0 </b></h2>
@@ -380,8 +363,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-215</b> &nbsp; <br> Цена: <b>80 руб.</b> &nbsp; В наличии (шт): <b>1</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№215.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№215.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">
             <h2><b>1 </b></h2>
@@ -397,8 +379,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-216</b> &nbsp; <br> Цена: <b>50 руб.</b> &nbsp; В наличии (шт): <b>1</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№216.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№216.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">
             <h2><b>1 </b></h2>
@@ -434,8 +415,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-217</b> &nbsp; <br> Цена: <b>50 руб.</b> &nbsp; В наличии (шт): <b>1</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№217.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№217.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">
             <h2><b>1 </b></h2>
@@ -451,8 +431,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-218</b> &nbsp; <br> Цена: <b>50 руб.</b> &nbsp; В наличии (шт): <b>1</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№218.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№218.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">
             <h2><b>1 </b></h2>
@@ -468,8 +447,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-219</b> &nbsp; <br> Цена: <b>50 руб.</b> &nbsp; В наличии (шт): <b>1</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№219.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№219.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">
             <h2><b>1 </b></h2>
@@ -485,8 +463,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-220</b> &nbsp; <br> Цена: <b>80 руб.</b> &nbsp; В наличии (шт): <b>1</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№220.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№220.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">
             <h2><b>1 </b></h2>
@@ -502,8 +479,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-221</b> &nbsp; <br> Цена: <b>50 руб.</b> &nbsp; В наличии (шт): <b>1</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№221.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№221.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">
             <h2><b>1 </b></h2>
@@ -519,8 +495,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-222</b> &nbsp; <br> Цена: <b>50 руб.</b> &nbsp; В наличии (шт): <b>1</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№222.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№222.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">
             <h2><b>1 </b></h2>
@@ -536,8 +511,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-223</b> &nbsp; <br> Цена: <b>85 руб.</b> &nbsp; В наличии (шт): <b>1</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№223.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№223.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">
             <h2><b>1 </b></h2>
@@ -553,8 +527,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-224</b> &nbsp; <br> Цена: <b>** руб.</b> &nbsp; В наличии (шт): <b>*</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№224.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№224.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3red">
             <h2><b>0 </b></h2>
@@ -570,8 +543,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-225</b> &nbsp; <br> Цена: <b>** руб.</b> &nbsp; В наличии (шт): <b>*</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№225.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№225.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3red">
             <h2><b>0 </b></h2>
@@ -587,8 +559,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-226</b> &nbsp; <br> Цена: <b>50 руб.</b> &nbsp; В наличии (шт): <b>1</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№226.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№226.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">
             <h2><b>1 </b></h2>
@@ -604,8 +575,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-227</b> &nbsp; <br> Цена: <b>** руб.</b> &nbsp; В наличии (шт): <b>*</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№227.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№227.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3red">
             <h2><b>0 </b></h2>
@@ -621,8 +591,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-228</b> &nbsp; <br> Цена: <b>50 руб.</b> &nbsp; В наличии (шт): <b>1</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№228.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№228.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">
             <h2><b>1 </b></h2>
@@ -638,8 +607,7 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-229</b> &nbsp; <br> Цена: <b>** руб.</b> &nbsp; В наличии (шт): <b>*</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№229.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№229.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3red">
             <h2><b>0 </b></h2>
@@ -655,7 +623,6 @@
             Состояние: <b>NM</b> &nbsp; Код товара: <b>PKOM-1990-230</b> &nbsp; <br> Цена: <b>50 руб.</b> &nbsp; В наличии (шт): <b>1</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
             <img border="0" class="img-scale3" src="img/USSR_PCWCS_№230.jpg" width="160" height="107" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">

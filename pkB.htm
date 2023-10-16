@@ -19,11 +19,15 @@
       .img-scale3 {
         transition: 1s;
       }
-      .img-scale3:hover {           /*  Это увеличение картинки при наведении курсора  */
+      .img-scale3:hover {           /*  Это увеличение картинки при наведении курсора - не использую  */
         transform: scale(1.0);
         width: 799px;
         height: 532px;
       }
+
+      .popup {width: 150px; cursor:pointer;}     /*  Увеличить фото благодаря фокусу :focus  */
+      .popup:focus {width: auto;}               /*жамкаю курсором и она увеличивается и остается а вот обратно к сожалению надо жать в стороне  */
+                                              /* взял отсудова: http://shpargalkablog.ru/2011/05/kak-uvelichit-izobrazhenie.html#close */
       .colon3red {
         width: 10;
         text-align: center;
@@ -53,8 +57,7 @@
             Состояние: <b>M</b> &nbsp; Код товара: <b>PKOM-2014-B077</b> &nbsp; <br> Цена: <b>50 руб.</b> &nbsp; В наличии (шт): <b>1</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/2014-077.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/2014-077.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">
             <h2><b>1 </b></h2>
@@ -92,8 +95,7 @@
             Состояние: <b>M</b> &nbsp; Код товара: <b>PKOM-2015-***</b> &nbsp; <br> Цена: <b>** руб.</b> &nbsp; В наличии (шт): <b>*</b>
           </td>
           <td width="143" align="center">
-            <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/*.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/*.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">
             <h2><b>1 </b></h2>
