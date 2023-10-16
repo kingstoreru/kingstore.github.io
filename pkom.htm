@@ -24,6 +24,10 @@
         width: 799px;
         height: 532px;
       }
+
+      .popup {width: 150px; cursor:pointer;}     /*  Увеличить фото благодаря фокусу :focus */
+      .popup:focus {width: auto;}              /* взял отсудова: http://shpargalkablog.ru/2011/05/kak-uvelichit-izobrazhenie.html#close */
+
       .colon3red {
         width: 10;
         text-align: center;
@@ -71,7 +75,7 @@
           </td>
           <td width="143" align="center">
             <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№197.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№197.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">
             <h2><b>1 </b></h2>
@@ -88,7 +92,7 @@
           </td>
           <td width="143" align="center">
             <a href="#" target="_blank">
-            <img border="0" class="img-scale3" src="img/USSR_PCWCS_№198.jpg" width="160" height="107" alt="" style="float: center;"></a>
+            <img border="0" src="img/USSR_PCWCS_№198.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
           </td>
           <td class="colon3purple">
             <h2><b>1 </b></h2>
