@@ -1,0 +1,292 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark: #202336;
+    --accent: #FB8F1D;
+}
+
+body {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.5;  /* Межстрочный интервал */
+    font-style: normal;
+    overflow-x: hidden; /* Шоб не было горизонтальной полосы прокрутки */
+    /* font-family: Inter, sans-serif; */
+}
+
+.container {
+    max-width: 1250px;  /* добавляем 30 пикселей к общей ширине из-за паддинга по 15 с краев */
+    margin: 0 auto;  /* это шоб контейнер встал посередине */
+    width: 100%;
+    padding: 0 15px;  /* шоб не прилипал контент к краям когда сужено окно браузера и кстати к общей ширине тогда надо добавить 30 пикселей*/
+    text-align: center; /* центрируем усё в контейнере */
+}
+
+.header {
+    margin: 0 auto;
+}
+
+.header__name {
+    font-size: 46px;
+    color: #5a5f38;
+    text-decoration: none; /* убираем подчеркивание */
+    display: inline-block; /* встает в одну строку */
+    margin: 0 17px; /* дает отступ от логотипа */
+}
+
+.header__name--podzagolovok {
+    text-decoration: none; /* убираем подчеркивание */
+    text-align: right;
+    font-size: 30px;
+    color: var(--accent);  /* задаем цвет через переменную */
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* каким то чудом эта хрень поставила по середине - тыкал в инспекторе и нашел */
+    padding: 30px 0 0 0; /* отступы сверху и снизу, далее справа и слева */
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    display: inline-block;  /* преобразуем в строчно-блочный элемент */
+}
+
+.navi {
+    text-align: center; /* центрируем менюшки */
+    
+}
+
+.navi__link {
+    font-size: 28px;
+    text-decoration: none; /* убираем подчеркивание */
+    display: block;
+}
+
+.navi__link_card {
+    font-size: 28px;
+    text-decoration: none; /* убираем подчеркивание */
+    
+    display: block;
+}
+
+.block_year {
+    font-size: 26px;
+    text-decoration: none; /* убираем подчеркивание */
+    display: inline-block;
+    margin: 10px 10px 0px 10px;
+}
+
+.next_line {
+    display: block;
+    margin: 0 0;
+}
+
+.block_menu {
+    font-size: 26px;
+    text-decoration: none; /* убираем подчеркивание */
+    display: inline-block;
+    margin: 20px 10px;
+    border:0px transparent #FB8F1D;
+    border-radius: 10px;
+    background: #e9e5d1;
+    /* border-style: outset; */
+    /* opacity: 20%; */
+
+}
+
+.block_menu > li {
+    display: inline-flex;
+    margin: 0 10px;
+}
+
+.block_menu > li > a {
+    text-decoration: none; /* убираем подчеркивание */
+    display: flex;
+}
+
+.date {
+    margin: 0 auto;
+    text-align: left; /* центрируем менюшки */
+    max-width: 1095px;
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--accent);
+    border:0px transparent #FB8F1D;
+    border-radius: 0px;
+    background: #F7F7F2;
+    padding: 0 0 0 28px;
+    margin-top: 20px;
+}
+
+.block_year--noactiv {
+    color: var(--accent);
+}
+
+#page_card {
+    color: var(--accent);
+}
+
+.block_year > li {
+    display: inline-flex;
+    margin: 0 10px;
+}
+
+.block_year > li > a {
+    text-decoration: none; /* убираем подчеркивание */
+    display: flex;
+}
+
+ul {
+    list-style-type: none; /* убирает маркеры  */
+    display: flex;
+    
+    text-decoration: none; /* убираем подчеркивание */
+}
+
+.navi__link--active {
+    color: var(--dark);  /* задаем цвет через переменную */
+    font-weight: 500;
+}
+
+.navi__link--rubrika {
+    color: var(--accent);  /* задаем цвет через переменную */
+    margin-top: 20px;
+}
+
+.year {
+    margin: 0 auto;
+    padding: auto;
+    width: 600px;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;  /* Максимальная ширина всех картинок */
+    height: auto; /* Для соблюдения пропорций */
+    vertical-align: middle;  /* Является неким фиксом в рассчете высоты, т.е. короче чтоб зазоров не было у картике в диве */
+}
+
+hr {
+    width: 40%;
+    size: 3px;
+    color: #5a5f38;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* таблица и фото */
+table, td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+
+    color: #212529; /* Цвет текста */
+    /*background: #fcfbf6;  /*Цвет фона всей таблицы */
+  }
+  table tr:nth-child(2n) {
+    background: #fcfbf6; /*   Красим каждую вторую строку таблицы с помощью псевдокласса :nth-child он используется для добавления стилей, базируясь на дереве элементов. Чтобы применить стили для четных элементов, то псевдокласс получится таким :nth-child(2n), если для не четных, то :nth-child(2n-1), для первого и третьего элемента :nth-child(1) и :nth-child(3) соответственно   */
+  }
+  .trwhite {
+
+  }
+  .img-scale3 {
+    transition: 1s;
+  }
+  .img-scale3:hover {           /*  Это увеличение картинки при наведении курсора  */
+    transform: scale(1.0);      /*  не стал юзать тк на мобильных устройствах фигня неудобно всё дергается*/
+    width: 799px;
+    height: 532px;
+  }
+
+  .popup {width: 150px; cursor:pointer;}     /*  Увеличить фото благодаря фокусу :focus  */
+  .popup:focus {width: auto;}               /*жамкаю курсором и она увеличивается и остается а вот обратно к сожалению надо жать в стороне  */
+                                          /* взял отсудова: http://shpargalkablog.ru/2011/05/kak-uvelichit-izobrazhenie.html#close */
+
+  .colon3red {
+    width: 10;
+    text-align: center;
+    color: red;
+  }
+  .colon3black {
+    color: black;
+  }
+  .colon3purple {
+    width: 10;
+    text-align: center;
+    color: #612D90;
+  }
+
+
+
+
+/*    блоки     */
+
+.post-wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+ .post-item {
+    padding: 10px;
+ }
+ .post-item-wrap {
+    background: #F7F7F2;
+    position: relative;
+ }
+ .post-item-wrap:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #C9F2C7;
+    transform: rotate(1deg);
+    transform-origin: left bottom;
+    transition: .3s ease-in-out;
+ }
+ .post-item-wrap:hover:after {
+    top: 5px;
+    left: 5px;
+    transform: rotate(2deg);
+ }
+ .post-link {
+    text-decoration: none;
+    display: block;
+    padding: 30px;
+ }
+ .post-title {
+    color: #33261D;
+    margin-bottom: 15px;
+    transition: .3s ease-in-out;
+ }
+ .post-item-wrap:hover .post-title {
+    color: #C9F2C7;
+ }
+ .post-content {
+    color: #A69888;
+    font-size: 14px;
+ }
+ @media (min-width: 768px) {
+    .post-item {
+       flex-basis: 50%;
+       flex-shrink: 0;
+    }
+ }
+ @media (min-width: 960px) {
+    .post-item {
+       flex-basis: 33.333333333%;
+    }
+ }
