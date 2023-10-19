@@ -1,35 +1,156 @@
-<html>
-
-
-
+<!DOCTYPE html>
+<html lang="en">
   <head>
-
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <title>Открытки Конверты</title>
-    <style>
-
-      .container { 
-        width: 100%; 
-        text-align: center;
-      }
-      .row {
-        width: 100%; 
-        text-align: center;
-        
-      }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Открытки</title>
     
-    </style>
-  
-
+      <style>
+        /* .container { 
+          width: 100%; 
+          text-align: center;
+        }
+        .row {
+          width: 100%; 
+          text-align: center;
+        } */
+      </style>
 
   </head>
 
+  <body>
 
+    <header class="header">
 
-  <body bgcolor="#FFFFFF">
+      <div class="container">  <!-- шоб было всё посередине обернем всё меню в контейнер со стилем контейнер -->
+        
+        <div class="header__container">
+          <a href="index.htm" class="logo">
+            <img src="img/KStore2-round_small_100px.png" alt="logo">
+          </a>
+          <div class="header__name">ЛАВКА КОЛЛЕКЦИОНЕРА</div>
+        </div>
 
-    <h1 align="center"><font color="#800000">Открытки Конверты</font></h1>
+        <!-- <div class="header__name--podzagolovok">Открытки</div> -->
+
+        <nav class="navi">
+          
+          <ul class="block_menu">
+            <li><a href="#">Монеты</a></li><li><a href="#">Жетоны</a></li><li><a href="#">Боны</a></li><li><a href="#">Значки</a></li><li><a href="#">Марки</a></li><li><a id="page_card" href="#">Открытки</a></li><li><a href="#">Конверты</a></li><li><a href="#">Книги</a></li><li><a href="#">Разное</a></li>
+          </ul>
+
+          
+          <!-- <a href="card.htm" class="header__name--podzagolovok">Открытки</a> -->
+          <div class="navi__link"><a href="pkom.htm" class="navi__link_card navi__link--rubrika">Почтовая карточка с оригинальной маркой</a></div>
+            <!-- <hr> -->
+            <!-- <div class="block_year">
+              <a href="#" class="block_year block_year--noactiv">1971</a>
+              <a href="#" class="block_year block_year--noactiv">1972</a>
+              <a href="#" class="block_year block_year--noactiv">1973</a>
+              <a href="#" class="block_year block_year--noactiv">1974</a>
+              <a href="#" class="block_year block_year--noactiv">1975</a>
+              <a href="#" class="block_year block_year--noactiv">1976</a>
+            </div>
+            <div class="navi__link">
+              <a href="#" class="block_year block_year--noactiv">1977</a>
+              <a href="#" class="block_year block_year--noactiv">1978</a>
+              <a href="#" class="block_year block_year--noactiv">1979</a>
+              <a href="#" class="block_year block_year--noactiv">1980</a>
+              <a href="#" class="block_year block_year--noactiv">1981</a>
+              <a href="#" class="block_year block_year--noactiv">1982</a>
+            </div>
+            <div class="navi__link">
+              <a href="#" class="block_year block_year--noactiv">1983</a>
+              <a href="#" class="block_year block_year--noactiv">1984</a>
+              <a href="#" class="block_year block_year--noactiv">1985</a>
+              <a href="#" class="block_year block_year--noactiv">1986</a>
+              <a href="#" class="block_year block_year--noactiv">1987</a>
+              <a href="#" class="block_year block_year--noactiv">1988</a>
+            </div>
+            <div class="navi__link">
+              <a href="#" class="block_year block_year--noactiv">1989</a>
+              <a href="pkom.htm#ussr1990" class="block_year">1990</a>
+              <a href="pkom.htm#ussr1991" class="block_year">1991</a>
+              <a href="#" class="block_year block_year--noactiv">1992</a>
+              <a href="#" class="block_year block_year--noactiv">1993</a>
+              <a href="#" class="block_year block_year--noactiv">1994</a>
+            </div>
+            <div class="navi__link">
+              <a href="#" class="block_year block_year--noactiv">1995</a>
+              <a href="#" class="block_year block_year--noactiv">1996</a>
+              <a href="#" class="block_year block_year--noactiv">1997</a>
+              <a href="#" class="block_year block_year--noactiv">1998</a>
+              <a href="#" class="block_year block_year--noactiv">1999</a>
+              <a href="#" class="block_year block_year--noactiv">2000</a>
+            </div>
+            <div class="navi__link">
+              <a href="#" class="block_year block_year--noactiv">2001</a>
+              <a href="#" class="block_year block_year--noactiv">2002</a>
+              <a href="#" class="block_year block_year--noactiv">2003</a>
+              <a href="#" class="block_year block_year--noactiv">2004</a>
+              <a href="#" class="block_year block_year--noactiv">2005</a>
+              <a href="#" class="block_year block_year--noactiv">2006</a>
+            </div>
+            <div class="navi__link">
+              <a href="#" class="block_year block_year--noactiv">2007</a>
+              <a href="#" class="block_year block_year--noactiv">2008</a>
+              <a href="#" class="block_year block_year--noactiv">2009</a>
+              <a href="#" class="block_year block_year--noactiv">2010</a>
+              <a href="#" class="block_year block_year--noactiv">2011</a>
+              <a href="#" class="block_year block_year--noactiv">2012</a>
+            </div>
+            <div class="navi__link">
+              <a href="#" class="block_year block_year--noactiv">2013</a>
+              <a href="#" class="block_year block_year--noactiv">2014</a>
+              <a href="#" class="block_year block_year--noactiv">2015</a>
+              <a href="#" class="block_year block_year--noactiv">2016</a>
+              <a href="#" class="block_year block_year--noactiv">2017</a>
+              <a href="#" class="block_year block_year--noactiv">2018</a>
+            </div>
+            <div class="navi__link">
+              <a href="#" class="block_year block_year--noactiv">2019</a>
+              <a href="#" class="block_year block_year--noactiv">2020</a>
+              <a href="#" class="block_year block_year--noactiv">2021</a>
+              <a href="#" class="block_year block_year--noactiv">2022</a>
+              <a href="#" class="block_year block_year--noactiv">2023</a>
+              <a href="#" class="block_year block_year--noactiv">2024</a>
+            </div> -->
+            <!-- <hr> -->
+          
+            <div class="navi__link"><a href="#" class="navi__link_card navi__link--rubrika">Почтовая карточка с литерой B</a></div>
+
+                     
+            <a href="#" class="navi__link navi__link--rubrika">Двойные открытки</a>
+          
+            <a href="#" class="navi__link navi__link--rubrika">Художественные маркированные открытки</a>
+          
+            <a href="#" class="navi__link navi__link--rubrika">Художественные немаркированные карточки</a>
+          
+            <a href="#" class="navi__link navi__link--rubrika">Телеграфные бланки</a>
+        </nav>
+        
+      </div>
+    </header>
+
+    <!-- <nav class="navi">
+      <a href="#" class="navi__link">1974</a>
+      <a href="#" class="navi__link">1975</a>
+      <a href="#" class="navi__link">1976</a>
+      <a href="#" class="navi__link">1977</a>
+    </nav>
+    <nav class="navi">
+      <a href="#" class="navi__link">1974</a>
+      <a href="#" class="navi__link">1975</a>
+      <a href="#" class="navi__link">1976</a>
+      <a href="#" class="navi__link">1977</a>
+    </nav> -->
+
+    <!-- <br><br><br><br><br><br> -->
+    <!-- <h1 align="center"><font color="#800000">Открытки Конверты</font></h1>
 
     <div class="row">
       &nbsp;
@@ -41,7 +162,7 @@
       <p align="center"><font size="5" color="#0000FF"><a href="pkom.htm">1990</a></font></p>
       <p align="center"><font size="5" color="#0000FF"><a href="pkom.htm#ussr1991">1991</a></font></p>    <!-- переходим на закладку -->
       &nbsp;
-      <p align="center">Почтовая карточка с литерой В</p>
+      <!--<p align="center">Почтовая карточка с литерой В</p>
       <p align="center"><font size="5" color="#0000FF"><a href="pkB.htm">2014</a></font></p>
       <p align="center"><font size="5" color="#0000FF"><a href="#">2015</a></font></p>
       &nbsp;
@@ -58,8 +179,12 @@
       <p align="center"><font size="5" color="#0000FF"><a href="#">2016</a></font></p>
       <p align="center"><font size="5" color="#0000FF"><a href="#">2017</a></font></p>
       <p align="center"><font size="5" color="#0000FF"><a href="#">2018</a></font></p>
-      <p align="center"><font size="5" color="#0000FF"><a href="#">2019</a></font></p>
+      <p align="center"><font size="5" color="#0000FF"><a href="#">2019</a></font></p> -->
       
+
+
+
+
 
       <!-- <ul style="list-style-type:none">
     
@@ -78,9 +203,9 @@
 
       </ul> -->
     
-    </div>
+    <!--</div>-->
     <p>&nbsp;&nbsp;</p>
-    <p align="center"><a href="index.htm">Главная</a> / Открытки Конверты</p>
+    <p align="center"><a href="index.htm">Главная</a> / Открытки</p>
   
   </body>
 
