@@ -1,7 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Открытки Конверты</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ПКB</title>
     <style>
       table, td {
         border: 1px solid #000;
@@ -42,83 +48,95 @@
   </head>
 
   <body bgcolor="#FFFFFF">
-    <h1 align="center"><font color="#4A7C59">Почтовые карточки с литерой В</font></h1>
-    <h3></font><p align="center"><font color="#FDA38B">РФ — 2014 год</font></p></h3>
+
+    <header class="header">
+
+      <div class="container">  <!-- шоб было всё посередине обернем всё меню в контейнер со стилем контейнер -->
+        
+        <div class="header__container">
+          <a href="index.htm" class="logo">
+            <img src="img/KStore2-round_small_100px.png" alt="logo">
+          </a>
+          <div class="header__name">ЛАВКА КОЛЛЕКЦИОНЕРА</div>
+        </div>
+
+        <nav class="navi">
+
+          <ul class="block_menu">
+            <li><a href="coins.htm">Монеты</a></li><li><a href="token.htm">Жетоны</a></li><li><a href="banknotes.htm">Банкноты</a></li><li><a href="badge.htm">Значки</a></li><li><a href="stamps.htm">Марки</a></li><li><a id="page_card" href="card.htm">Открытки</a></li><li><a href="envelopes.htm">Конверты</a></li><li><a href="books.htm">Книги</a></li><li><a href="varia.htm">Разное</a></li>
+          </ul>
+
+          <div class="navi__link">
+            <a href="#" class="navi__link_card navi__link--rubrika">Почтовая карточка с литерой В</a>
+          </div>
+            
+            <ul class="block_year">
+              <li><a href="#">1999</a></li><li><a href="#">2000</a></li><li><a href="#">2001</a></li><li><a href="#">2002</a></li><li><a href="#">2003</a></li><li><a href="#">1976</a></li>
+            </ul>
+            <ul class="block_year next_line">
+              <li><a href="#">2004</a></li><li><a href="#">2005</a></li><li><a href="#">2006</a></li><li><a href="#">2007</a></li><li><a href="#">2008</a></li><li><a href="#">1982</a></li>
+            </ul>
+            <ul class="block_year next_line">
+              <li><a href="#">2009</a></li><li><a href="#">2010</a></li><li><a href="#">2011</a></li><li><a href="#">2012</a></li><li><a href="#">2013</a></li><li><a href="#">1988</a></li>
+            </ul>
+            <ul class="block_year next_line">
+              <li><a href="#rf2014">2014</a></li><li><a href="#ussr1990">2015</a></li><li><a href="#ussr1991">2016</a></li><li><a href="#">2017</a></li><li><a href="#">2018</a></li><li><a href="#">2019</a></li>
+            </ul>
+         
+        </nav>
+        
+      </div>
+    </header>
+
+
+    <div class="date" id="rf2014">2014 год</div>
+
+    <div class="post-wrap">
+      <div class="post-item">
+        <div class="post-item-wrap">
+          <a href="" class="post-link">
+            <h3 class="post-title">2014 год. № 2014-077/1</h3>
+            <img border="0" src="img/PKB-2014-B077.jpg" class="" tabindex="1" alt="" style="float: center;">
+            <p>XXV Международный турнир по вольной борьбе серии Голден Гран-При "Иван Ярыгин", 24-26 янв 2014 г. Красноярск.</p>
+            <p class="post-content">Дизайнер: <b>Поварихин А.</b> Тираж 5 тыс.</p>
+            <p class="post-content">Состояние: <b>M</b> &nbsp; Код товара: <b>PKB-2014-B077</b> &nbsp; <br> Цена: <b>50 руб.</b> &nbsp; В наличии (шт): <b class="colon3black">1</b></p>
+          </a>
+        </div>
+      </div>
       
-      <!-- ТАБЛИЦА 2014 -->
-      <table align="center" cellpadding="5" cellspacing="1" width="1156px">
-
-        <!-- 1-я строка -->
-        <tr>
-          <td width="143" align="center">
-            <b>XXV Международный турнир по вольной борьбе серии Голден Гран-При "Иван Ярыгин", 24-26 января 2014г. Красноярск</b><br> 2014 год. № 2014-077/1 
-            Дизайнер <b>Поварихин А.</b> Тираж 5 тыс.
-            <hr>
-            Состояние: <b>M</b> &nbsp; Код товара: <b>PKOM-2014-B077</b> &nbsp; <br> Цена: <b>50 руб.</b> &nbsp; В наличии (шт): <b>1</b>
-          </td>
-          <td width="143" align="center">
-            <img border="0" src="img/2014-077.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
-          </td>
-          <td class="colon3purple">
-            <h2><b>1 </b></h2>
-          </td>
-        </tr>
-        
-        
-
-
-
-
-      <!-- КОНЕЦ ТАБЛИЦА 2014 -->
-      </table>
-
-      <!-- <td width="143" align="center">
-        <a href="#" target="_blank">
-        <img border="0" src="img/*.jpg"></a>
-      </td> -->
+      <div class="post-item">
+        <div class="post-item-wrap">
+          <a href="" class="post-link">
+            <h3 class="post-title">2014 год. № 2014-078/1</h3>
+            <img border="0" src="img/PKB-2014-B078.jpg" class="" tabindex="1" alt="" style="float: center;">
+            <p>XXV Международный турнир по вольной борьбе серии Голден Гран-При "Иван Ярыгин". Талисманы турнира, 24-26 янв 2014 г. Красноярск.</p>
+            <p class="post-content">Художник: <b>Поварихин А.</b> Тираж 5 тыс.</p>
+            <p class="post-content">Состояние: <b>M</b> &nbsp; Код товара: <b>PKB-2014-B078</b> &nbsp; <br> Цена: <b>50 руб.</b> &nbsp; В наличии (шт): <b class="colon3black">1</b></p>
+          </a>
+        </div>
+      </div>
+      
+      <div class="post-item">
+        <div class="post-item-wrap">
+          <a href="" class="post-link">
+            <h3 class="post-title">2014 год. № 2014-079/1</h3>
+            <img border="0" src="img/PKB-2014-B079.jpg" class="" tabindex="1" alt="" style="float: center;">
+            <p>Их имена в истории Пензы. В.Э. Мейерхольд (1874-1940), режиссер, актер.</p>
+            <p class="post-content">Художник: <b>Бетрединова Х.</b> Тираж 9 тыс.</p>
+            <p class="post-content">Состояние: <b>M</b> &nbsp; Код товара: <b>PKB-2014-B079</b> &nbsp; <br> Цена: <b>50 руб.</b> &nbsp; В наличии (шт): <b class="colon3black">1</b></p>
+          </a>
+        </div>
+      </div>
+    </div>
 
 
 
       <p>&nbsp;&nbsp;</p>
-
-      <h3 id="ussr1991"></font><p align="center"><font color="#FDA38B">РФ — 2015 год</font></p></h3>    <!-- Тут id делает закладку для ссылки сюда -->
-      
-      <!-- ТАБЛИЦА 2015 -->
-      <table align="center" cellpadding="5" cellspacing="1" width="1156px">
-
-        <!-- 1-я строка -->
-        <tr>
-          <td width="143" align="center">
-            <b>***</b> <br> 2015 год. № *** 
-            Дизайнер <b>***</b> Тираж ** тыс.
-            <hr>
-            Состояние: <b>M</b> &nbsp; Код товара: <b>PKOM-2015-***</b> &nbsp; <br> Цена: <b>** руб.</b> &nbsp; В наличии (шт): <b>*</b>
-          </td>
-          <td width="143" align="center">
-            <img border="0" src="img/*.jpg" class="popup" tabindex="1" alt="" style="float: center;"></a>
-          </td>
-          <td class="colon3purple">
-            <h2><b>1 </b></h2>
-          </td>
-        </tr>
-
-        
-
-        <!-- КОНЕЦ ТАБЛИЦА 2015 -->
-      </table>
-      <p>&nbsp;&nbsp;</p>
-
-      <!-- ТАБЛИЦА 3 -->
-
-    
-
-
       &nbsp;
       <p>&nbsp;&nbsp;</p>
       <p align="center"><a href="index.htm">Главная</a> /
 
-      <a href="card.htm">Открытки Конверты</a> / ПКВ</p>
-
+      <a href="card.htm">Открытки</a> / ПК В</p>
 
   </body>
 

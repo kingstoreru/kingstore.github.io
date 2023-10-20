@@ -1,14 +1,14 @@
-<html>
-
-
-
+<!DOCTYPE html>
+<html lang="en">
   <head>
-
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Монеты</title>
     <style>
-
       .container { 
         width: 100%; 
         text-align: center;
@@ -18,18 +18,40 @@
         text-align: center;
         
       }
-    
     </style>
-  
-
-
   </head>
-
-
 
   <body bgcolor="#FFFFFF">
 
-    <h1 align="center"><font color="#800000">Монеты</font></h1>
+
+    <header class="header">
+
+      <div class="container">  <!-- шоб было всё посередине обернем всё меню в контейнер со стилем контейнер -->
+        
+        <div class="header__container">
+          <a href="index.htm" class="logo">
+            <img src="img/KStore2-round_small_100px.png" alt="logo">
+          </a>
+          <div class="header__name">ЛАВКА КОЛЛЕКЦИОНЕРА</div>
+        </div>
+
+        <nav class="navi">
+
+          <ul class="block_menu">
+            <li><a id="page_card" href="coins.htm">Монеты</a></li><li><a href="token.htm">Жетоны</a></li><li><a href="banknotes.htm">Банкноты</a></li><li><a href="badge.htm">Значки</a></li><li><a href="stamps.htm">Марки</a></li><li><a href="card.htm">Открытки</a></li><li><a href="envelopes.htm">Конверты</a></li><li><a href="books.htm">Книги</a></li><li><a href="varia.htm">Разное</a></li>
+          </ul>
+
+          <div class="navi__link">
+            <a href="#" class="navi__link_card navi__link--rubrika">Монеты</a>
+          </div>
+        
+        </nav>
+        
+      </div>
+    </header>
+
+
+    <!-- <h1 align="center"><font color="#5a5f38">МОНЕТЫ</font></h1> -->
 
     <div class="row">
       &nbsp;
