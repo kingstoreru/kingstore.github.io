@@ -293,7 +293,7 @@ table, td {
 
 
 
-/* Блок с анимацией при наведении  */
+/* Блок с анимацией при наведении для страницы books  */
 
 .post-wrap-books {
     max-width: 1120px;
@@ -305,14 +305,14 @@ table, td {
  .post-item-books {
     padding: 10px;
  }
- .post-link-books {
+.post-link-books {
     text-decoration: none;
     display: block;
     color: #FC473E;
     font-weight: 500;
     position: relative;
     z-index: 5;
- }
+}
  .post-item-wrap-books {
     position: relative;
     background-color: #FDFDFD;
@@ -382,6 +382,13 @@ table, td {
     right: -12px;
     bottom: -12px;
  }
+ .letter {
+    color: red; /* Красный цвет символов */
+    font-size: 150%; /* Размер шрифта в процентах */
+    font-family: serif; /* Шрифт с засечками */
+    position: relative; /* Относительное позиционирование */
+    top: 5px; /* Сдвиг сверху */
+ }
  @media (min-width: 768px) {
     .post-item-books {
        flex-basis: 50%;
@@ -392,4 +399,16 @@ table, td {
     .post-item-books {
        flex-basis: 33.333333333%;
     }
+ }
+
+
+
+
+
+    /* для страницы badge */
+
+    .badge {
+    border: 2px solid #5a5f38;
+    padding: 20px;
+    margin: 80px 100px;
  }
