@@ -412,3 +412,82 @@ table, td {
     padding: 20px;
     margin: 80px 100px;
  }
+
+
+
+    /* код от ИИ для страницы Книги*/
+
+.block_boks {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+.book {
+    width: 200px;
+    text-align: center;
+}
+.book img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.book img:hover {
+    transform: scale(1.5);
+}
+
+.book-description {
+    margin-top: 10px;
+}
+
+.book-links {
+    margin-top: 10px;
+}
+.book-links a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: white;
+    background: #007bff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.book-links a:hover {
+    background: #0056b3;
+}
+.book_letter {
+    color: Navy; /* цвет символов */
+    font-size: 100%; /* Размер шрифта в процентах */
+    font-weight: 700; /* толщина шрифта */
+}
+
+
+
+
+/*от ИИ для меню книг*/
+.block_books-menu {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.nav-menu-books a {
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    font-size: 120%;
+    color: white;
+    background: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+}
+
+.nav-menu-books a:hover {
+    background: #0056b3;
+}
