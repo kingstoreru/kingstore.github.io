@@ -26,22 +26,14 @@
       <nav class="navi">
 
         <ul class="block_menu">
-          <li><a href="coins.htm">Монеты</a></li><li><a href="token.htm">Жетоны</a></li><li><a href="banknotes.htm">Банкноты</a></li><li><a href="badge.htm">Значки</a></li><li><a href="stamps.htm">Марки</a></li><li><a href="card.htm">Открытки</a></li><li><a href="envelopes.htm">Конверты</a></li><li><a href="books.htm">Книги</a></li><li><a id="page_card" href="varia.htm">CD disk</a></li>
+          <li><a href="coins.htm">Монеты</a></li><li><a href="token.htm">Жетоны</a></li><li><a href="banknotes.htm">Банкноты</a></li><li><a href="badge.htm">Значки</a></li><li><a href="stamps.htm">Марки</a></li><li><a href="card.htm">Открытки</a></li><li><a href="envelopes.htm">Конверты</a></li><li><a href="books-menu.htm">Книги</a></li><li><a id="page_card" href="varia.htm">Разное</a></li>
         </ul>
 
-       <!-- <div class="navi__link">
-          <a href="#" class="navi__link_card navi__link--rubrika">CD disk</a>
-        </div> -->
-       
+        <div class="navi__link">
+          <a href="#" class="navi__link_card navi__link--rubrika">Разное</a>
+        </div>
+          
       </nav>
-
-        <h1 align="center"><font color="#800000">CD disk</font></h1>
-    
-          <div class="row">
-             <!-- <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSjLyr8a6VQkbkry_lwbX0oXl4kEuzMhFsNi8tw-RUM8pebKGl_ZRSL-8zf-hS0XWlzWJiTpLyn7F8I/pubhtml?gid=0&single=true" width="90%" height="760">
-              </iframe> -->
-              <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSjLyr8a6VQkbkry_lwbX0oXl4kEuzMhFsNi8tw-RUM8pebKGl_ZRSL-8zf-hS0XWlzWJiTpLyn7F8I/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="90%" height="760"></iframe>
-          </div>
       
     </div>
   </header>
@@ -60,6 +52,42 @@
 
     <a href="varia.htm">Разное</a> / ****</p>
 
+
+
+      <!-- <button name="mainButton" onclick="onClickButton(this)">Жамкни</button> -->
+      <!-- <button onmouseover="onClickButton()">Жамкни</button>
+      <button onmouseout="onClickButton()">Жамкни</button> -->
+      <!-- <p id="text">Text</p>
+
+      <span class="simple-text">Text 1</span>
+      <span class="simple-text">Text 2</span>
+      <span class="simple-text">Text 3</span> -->
+
+      <form id="main-form" onsubmit="return checkForm(this)" method="post">
+        <label for="name">Имя:</label>
+        <input type="text" name="name" placeholder="Имя" id="name"><br><br>
+        <label for="password">Пароль:</label>
+        <input type="password" name="pass" placeholder="Пароль" id="pass"><br><br>
+        <label for="repass">Прверка пароля:</label>
+        <input type="password" name="repass" placeholder="Проверка пароля" id="repass"><br><br>
+        <span>Пол:</span>
+        <input type="radio" name="state" id="male" value="Мужской">
+        <label for="male">Мужской</label>
+        <input type="radio" name="state" id="female" value="Женский">
+        <label for="female">Женский</label><br>
+        <input type="submit" name="submit" value="Готово">
+      </form>
+
+
+
+      <script src="js/main.js"></script>
+
+      <footer class="site-footer">
+        <div class="copyr-container">
+            <p>© Kingstore, 2025</p>
+            <p>Магазин для коллекционеров</p>
+        </div>
+      </footer>
 </body>
 
 </html>
